@@ -85,3 +85,9 @@ mkdir build && cd build && cmake .. && cmake --build . && ctest
 ```
 
 the Kyber reference implementation gets built and tested.
+
+
+It also contains an unsafe rust wrapper library, `libkyber-sys`. 
+Bindings were generated using `bindgen` and the following command:
+```bindgen ref/api.h -o src/bindings.rs --allowlist-var "KYBER_.*" --allowlist-function "crypto_kem.*"```
+

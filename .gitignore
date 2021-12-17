@@ -4,3 +4,22 @@ tvecs512
 tvecs512-90s
 tvecs768
 tvecs768-90s
+*.dSYM
+*.pyc
+.DS_Store
+*.req
+*.rsp
+*.o
+
+# Added by cargo
+
+/target
+
+
+# Added by cargo
+#
+# already existing elements were commented out
+
+#/target
+Cargo.lock
+.vscode
